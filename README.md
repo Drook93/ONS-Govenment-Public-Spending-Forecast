@@ -16,7 +16,7 @@ By incorperating ETL-processed consumer spending data, inflation metrics and con
 * 
 * [EDA with Visulaization Lab](https://github.com/Drook93/IBM-Data-Science-Capstone-SpaceX/blob/main/EDA%20with%20Data%20Visulisation.ipynb)
 
-  ### Process Summary: Testing Inflation Lag Impact on Consumer Spending
+  ## Testing Inflation Lag Impact on Consumer Spending🧪
   See link below to view the file:
 * [Hypothesis Test With Granger Causality/ Pearson Correlation]([https://github.com/Drook93/IBM-Data-Science-Capstone-SpaceX/blob/main/SpaceX%20Locations%20Analysis%20with%20Folium.ipynb)](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Inflation_lag_correlation_test_and_granger_test.ipynb)
 

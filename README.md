@@ -20,6 +20,8 @@ By incorperating ETL-processed consumer spending data, inflation metrics and con
 
   ## Testing Inflation Lag Impact on Consumer Spending🧪
 
+From these test's, we are looking to see if Inflation as any causel affect on Consumer Spending. We start by identifying if there is any correlation between them with setting manual lags. I'm looking for negative values to see any inverse relationship but there are weak coefficience relationships across all the lags.  
+
  *See link below to view the file ↓*
 * [Hypothesis Test With Granger Causality/ Pearson Correlation](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/tree/main/Hypothesis%20Test)
 
@@ -30,19 +32,23 @@ By incorperating ETL-processed consumer spending data, inflation metrics and con
 
 2. **Correlation Analysis**:
    - Compute correlations between spending changes and lagged inflation.
-   - Pearson Corrleation lag.
+   - Manual lag loop for correlation
+Pearson's Correlation Coefficient is used as a first test to see if there is any strong correlation between the features. In this case, it is weak in Coefficience
    - ![Correlation Analysis Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Pearson%20Correlation%20Manual%20LAG.png)
 
 3. **Granger Causality Tests**:
    - Test if inflation Granger-causes spending changes (up to 13 lags).
    - Significant at lags 3, 4, 6-13 (p < 0.05).
+
+We then test across different Inflation metrics against Consumer Spending using Granger Causality, for further evidence to determine if there is any statistical significance between them. The best lag across each of the metrics is measured to see if the p-values dip below 0.05 but with the highest degrees-of-freedom from rolling cross-validation windows.
    - ![Granger Test Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Granger%20Causality%20Model.png)
      
 4. **Lag-Specific Regression**:
    - Shift inflation mean by 3 and 4 lags.
    - Identify the direction of causation with OLS mode
    - Run OLS on spending vs. lagged inflation.
-   - Coefficients: +8.75 (lag 3), (This identifies that when Inflation Accelerates over a quater that 3 quaters later Consumer Spending increases as a result).
+   - Coefficients: +8.75 (lag 3)
+Using the top performing lag from Granger, we test the direction; does that metric boost or drag spending. Magnitudes are revelaed in the coeffient size. Bigger postitives mean they surge together and bigger negatives mean higher prices reduces peoples spending capacity.
    - ![Regression Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/OLS%20Model.png)
 
 5. **Export Results**:
@@ -62,6 +68,9 @@ This notebook builds forecasting models for consumer spending using lagged infla
 2. **Data Preparation**:
    - Load CPIH and consumer spending data.
    - Create lagged features (e.g., Inflation_Acceleration_lag3).
+   For this we must keep NaN's before dropping any rows with the merged df with consumer spending. The Inflation Metrics have shifted as per the Granger Test results. We MUST keep the row order for the inflation lag features in tack against the consumer spending. By executing this **"Merged_df_copy_split_rows_test = Merged_df.copy()
+Merged_df_copy_split_rows_test.dropna(inplace=True)
+Merged_df_copy_split_rows_test.reset_index(drop=True, inplace=True)"** We allow for the first rows and beyond to be aligned with the lag in Axis 0 for the model to be trained and tested correctly.
    - ![Data Preparation Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Loading%20CPIH%20and%20Consumer%20Spending.png)
 
 3. **Model Definition and Hyperparameter Tuning**:
@@ -74,7 +83,7 @@ This notebook builds forecasting models for consumer spending using lagged infla
 4. **Training and Prediction**:
    - Apply lagging and scaling.
    - Fit models, predict on test data.
-   - -Creating GrideSearch CV testing across models
+   - Creating GrideSearch CV with cross-validation folders across the models
      The first main loop is identifying the most frequent best lag across sectors with GrideSearch CV with the coresponding models and their parameters. 
    - ![Lag Loop 1 Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Manual%20Lag%20Most%20Frequent.png)
      Ensure the best lag is applied to X-test and t-train with preocess StandardScaler for better computation accuracy. The Model is then trained for each sector with the chosen lag amd applied to GrideSearch CV with ".fit.

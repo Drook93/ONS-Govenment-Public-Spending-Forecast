@@ -28,7 +28,7 @@ By incorperating ETL-processed consumer spending data, inflation metrics and con
 2. **Correlation Analysis**:
    - Compute correlations between spending changes and lagged inflation.
    - Pearson Corrleation lag.
-   - ![Correlation Analysis Image][(https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Pearson%20Correlation%20Manual%20LAG.png)
+   - ![Correlation Analysis Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Pearson%20Correlation%20Manual%20LAG.png)
 
 3. **Granger Causality Tests**:
    - Test if inflation Granger-causes spending changes (up to 13 lags).

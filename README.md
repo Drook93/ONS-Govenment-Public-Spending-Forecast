@@ -9,10 +9,11 @@ By incorperating ETL-processed consumer spending data, inflation metrics and con
 
 
 #### ↓↓↓Links to Folders↓↓↓
--[Data ETL🔎](Drook93/ONS-Govenment-Public-Spending-Forecast/ETL)
--[EDA with Seaborn/Matplotlib](Drook93/ONS-Govenment-Public-Spending-Forecast/EDA)
--[Hypothesis Tests](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/tree/main/Hypothesis%20Test)
--[Predictive Models](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/tree/main/Predictive%20Models)
+*[Data ETL🔎](Drook93/ONS-Govenment-Public-Spending-Forecast/ETL)
+*[EDA with Seaborn/Matplotlib](Drook93/ONS-Govenment-Public-Spending-Forecast/EDA)
+*[Hypothesis Tests](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/tree/main/Hypothesis%20Test)
+*[Predictive Models](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/tree/main/Predictive%20Models)
+*[Final Presentation & Findings]()
 
  
 
@@ -61,7 +62,6 @@ This notebook builds forecasting models for consumer spending using lagged infla
 2. **Data Preparation**:
    - Load CPIH and consumer spending data.
    - Create lagged features (e.g., Inflation_Acceleration_lag3).
-   - Train-test split.
    - ![Data Preparation Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Loading%20CPIH%20and%20Consumer%20Spending.png)
 
 3. **Model Definition and Hyperparameter Tuning**:
@@ -74,7 +74,9 @@ This notebook builds forecasting models for consumer spending using lagged infla
    - Apply lagging and scaling.
    - Fit models, predict on test data.
    - -Creating GrideSearch CV testing across models
+     The first main loop is identifying the most frequent best lag across sectors with GrideSearch CV with the coresponding models and their parameters. 
    - ![Lag Loop 1 Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Manual%20Lag%20Most%20Frequent.png)
+     Ensure the best lag is applied to X-test and t-train with preocess StandardScaler for better computation accuracy. The Model is then trained for each sector with the chosen lag amd applied to GrideSearch CV with ".fit.
    - ![Lag Loop 2 Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Applying%20Best%20Lag%20To%20Model.png)
     
 

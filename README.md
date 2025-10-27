@@ -68,9 +68,12 @@ This notebook builds forecasting models for consumer spending using lagged infla
 2. **Data Preparation**:
    - Load CPIH and consumer spending data.
    - Create lagged features (e.g., Inflation_Acceleration_lag3).
-   For this we must keep NaN's before dropping any rows with the merged df with consumer spending. The Inflation Metrics have shifted as per the Granger Test results. We MUST keep the row order for the inflation lag features in tack against the consumer spending. By executing this **"Merged_df_copy_split_rows_test = Merged_df.copy()
+   - For this we must keep NaN's before dropping any rows with the merged df with consumer spending.
+   - The Inflation metrics in earlier code would have been shifted as per the results of the best lag.
+   - We MUST keep the row order for the inflation lag features in tack against the consumer spending. By executing this **"Merged_df_copy_split_rows_test = Merged_df.copy()
 Merged_df_copy_split_rows_test.dropna(inplace=True)
-Merged_df_copy_split_rows_test.reset_index(drop=True, inplace=True)"** We allow for the first rows and beyond to be aligned with the lag in Axis 0 for the model to be trained and tested correctly.
+Merged_df_copy_split_rows_test.reset_index(drop=True, inplace=True)"**
+   - We allow for the first rows and beyond to be aligned with the lag in Axis 0 for the model to be trained and tested correctly.
    - ![Data Preparation Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Loading%20CPIH%20and%20Consumer%20Spending.png)
 
 3. **Model Definition and Hyperparameter Tuning**:
@@ -84,9 +87,10 @@ Merged_df_copy_split_rows_test.reset_index(drop=True, inplace=True)"** We allow 
    - Apply lagging and scaling.
    - Fit models, predict on test data.
    - Creating GrideSearch CV with cross-validation folders across the models
-     The first main loop is identifying the most frequent best lag across sectors with GrideSearch CV with the coresponding models and their parameters. 
+   - The first main loop is identifying the most frequent best lag across sectors with GrideSearch CV with the coresponding models and their parameters. 
    - ![Lag Loop 1 Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Manual%20Lag%20Most%20Frequent.png)
-     Ensure the best lag is applied to X-test and t-train with preocess StandardScaler for better computation accuracy. The Model is then trained for each sector with the chosen lag amd applied to GrideSearch CV with ".fit.
+   - Ensure the best lag is applied to X-test and t-train with preocess StandardScaler for better computation accuracy.
+   - The Model is then trained for each sector with the chosen lag amd applied to GrideSearch CV with ".fit.
    - ![Lag Loop 2 Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Applying%20Best%20Lag%20To%20Model.png)
     
 

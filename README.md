@@ -17,7 +17,7 @@ By incorperating ETL-processed consumer spending data, inflation metrics and con
 * [EDA with Visulaization Lab](https://github.com/Drook93/IBM-Data-Science-Capstone-SpaceX/blob/main/EDA%20with%20Data%20Visulisation.ipynb)
 
   ## Testing Inflation Lag Impact on Consumer Spending🧪
-  See link below to view the file:
+ See link below to view the file:
 * [Hypothesis Test With Granger Causality/ Pearson Correlation](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Inflation_lag_correlation_test_and_granger_test.ipynb)
 
 1. **Data Preparation**:
@@ -34,7 +34,7 @@ By incorperating ETL-processed consumer spending data, inflation metrics and con
    - Test if inflation Granger-causes spending changes (up to 13 lags).
    - Significant at lags 3, 4, 6-13 (p < 0.05).
    - ![Granger Test Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Granger%20Causality%20Model.png)
-   - 
+     
 
 4. **Lag-Specific Regression**:
    - Shift inflation mean by 3 and 4 lags.

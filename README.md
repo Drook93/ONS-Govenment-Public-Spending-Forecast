@@ -1,5 +1,5 @@
-# IBM-Data-Science-Capstone-SpaceX
-!([https://raw.githubusercontent.com/Drook93/IBM-Data-Science-Capstone-SpaceX/main/Side%201%20Image_page-0001.jpg](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/opengraph.png))
+# Time-series Forecasting With Consuemr Spending ONS Data
+([https://raw.githubusercontent.com/Drook93/IBM-Data-Science-Capstone-SpaceX/main/Side%201%20Image_page-0001.jpg](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/opengraph.png))
 
 Office For National Statistics is publicly accessed government economic data. The goal with this project is to be able to forecasting Consumer Spending across all sectors to identify where people are chosing to spend their money. This project can aid business's in deciding where they should focuse their marketing efforts and inventory allocation and adapt pricing stratgies based on sector specific spending strends.
 

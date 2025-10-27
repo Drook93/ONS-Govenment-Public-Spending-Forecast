@@ -67,6 +67,7 @@ This notebook builds forecasting models for consumer spending using lagged infla
 3. **Model Definition and Hyperparameter Tuning**:
    - Define Lasso, Ridge, RandomForest models with parameters.
    - TimeSeriesSplit and train test split.
+     **ENSURE** the order of the code block remains the same to prevent data leakage for training and testing the model, this will give incorrect readings for the metrics otherwise. Also you **MUST** apply:         **"shuffle=False"** for the train-test split to preserve temporal order.
    - ![Model Definition Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Lag%20Options%20And%20Models.png)
    - ![Timeseries Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Time%20Series%20And%20TrainTest%20Split.png)
 

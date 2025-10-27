@@ -18,17 +18,17 @@ By incorperating ETL-processed consumer spending data, inflation metrics and con
 
   ## Testing Inflation Lag Impact on Consumer Spending🧪
   See link below to view the file:
-* [Hypothesis Test With Granger Causality/ Pearson Correlation]([https://github.com/Drook93/IBM-Data-Science-Capstone-SpaceX/blob/main/SpaceX%20Locations%20Analysis%20with%20Folium.ipynb)](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Inflation_lag_correlation_test_and_granger_test.ipynb)
+* [Hypothesis Test With Granger Causality/ Pearson Correlation](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Inflation_lag_correlation_test_and_granger_test.ipynb)
 
 1. **Data Preparation**:
    - Load consumer spending and CPIH data.
    - Calculate percentage changes for spending and inflation.
-   - ![Data Preparation Image][path/to/data_prep.png](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Data%20Prep%20Inflation%20Lag%20Screenshot.png)
+   - ![Data Preparation Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Data%20Prep%20Inflation%20Lag%20Screenshot.png)
 
 2. **Correlation Analysis**:
    - Compute correlations between spending changes and lagged inflation.
    - Pearson Corrleation lag.
-   - ![Correlation Analysis Image][(path/to(https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Pearson%20Correlation%20Manual%20LAG.png)
+   - ![Correlation Analysis Image][(https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Pearson%20Correlation%20Manual%20LAG.png)
 
 3. **Granger Causality Tests**:
    - Test if inflation Granger-causes spending changes (up to 13 lags).

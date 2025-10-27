@@ -9,7 +9,7 @@ By incorperating ETL-processed consumer spending data, inflation metrics and con
 
 
 
-* [Data ETL](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%202%20Spending%20Insights%20Sector%20Prepaired%202025.ipynb)
+* [Data ETL🔎](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%202%20Spending%20Insights%20Sector%20Prepaired%202025.ipynb)
   
   
 * [EDA with Seaborn/Matplotlib](https://github.com/Drook93/IBM-Data-Science-Capstone-SpaceX/blob/main/SpaceX%20EDA%20with%20SQL.ipynb)

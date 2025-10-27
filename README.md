@@ -1,6 +1,6 @@
 
 # Time-series Forecasting With Consuemr Spending ONS Data
-![Main_Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/opengraph.png)
+![Main_Image](Project Images/opengraph.png)
 
 Office For National Statistics is publicly accessed government economic data. The goal with this project is to be able to forecasting Consumer Spending across all sectors to identify where people are chosing to spend their money. This project can aid business's in deciding where they should focuse their marketing efforts and inventory allocation and adapt pricing stratgies based on sector specific spending strends.
 
@@ -8,33 +8,34 @@ By incorperating ETL-processed consumer spending data, inflation metrics and con
 
 
 
+## ↓↓↓Links to Folders↓↓↓
+[Data ETL🔎](Drook93/ONS-Govenment-Public-Spending-Forecast/ETL)
+[EDA with Seaborn/Matplotlib](Drook93/ONS-Govenment-Public-Spending-Forecast/EDA)
+[Hypothesis Tests](Drook93/ONS-Govenment-Public-Spending-Forecast/Hypothesis Test)
+[Predictive Models](Drook93/ONS-Govenment-Public-Spending-Forecast/Predictive Models)
 
-
-* [Data ETL🔎](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%202%20Spending%20Insights%20Sector%20Prepaired%202025.ipynb)
-  
-  
-* [EDA with Seaborn/Matplotlib](https://github.com/Drook93/IBM-Data-Science-Capstone-SpaceX/blob/main/SpaceX%20EDA%20with%20SQL.ipynb)
-* 
-* [EDA with Visulaization Lab](https://github.com/Drook93/IBM-Data-Science-Capstone-SpaceX/blob/main/EDA%20with%20Data%20Visulisation.ipynb)
  
+
+
   ## Testing Inflation Lag Impact on Consumer Spending🧪
- See link below to view the file:
+
+ *See link below to view the file ↓*
 * [Hypothesis Test With Granger Causality/ Pearson Correlation](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Inflation_lag_correlation_test_and_granger_test.ipynb)
 
 1. **Data Preparation**:
    - Load consumer spending and CPIH data.
    - Calculate percentage changes for spending and inflation.
-   - ![Data Preparation Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Data%20Prep%20Inflation%20Lag%20Screenshot.png)
+   - ![Data Preparation Image](Project Images/Data Prep Inflation Lag Screenshot.png)
 
 2. **Correlation Analysis**:
    - Compute correlations between spending changes and lagged inflation.
    - Pearson Corrleation lag.
-   - ![Correlation Analysis Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Pearson%20Correlation%20Manual%20LAG.png)
+   - ![Correlation Analysis Image](Drook93/ONS-Govenment-Public-Spending-Forecast/Project Images/Pearson Correlation Manual LAG.png)
 
 3. **Granger Causality Tests**:
    - Test if inflation Granger-causes spending changes (up to 13 lags).
    - Significant at lags 3, 4, 6-13 (p < 0.05).
-   - ![Granger Test Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Granger%20Causality%20Model.png)
+   - ![Granger Test Image](Project Images/Granger Causality Model.png)
      
 
 4. **Lag-Specific Regression**:
@@ -42,7 +43,7 @@ By incorperating ETL-processed consumer spending data, inflation metrics and con
    - Identify the direction of causation with OLS mode
    - Run OLS on spending vs. lagged inflation.
    - Coefficients: +8.75 (lag 3), (This identifies that when Inflation Accelerates over a quater that 3 quaters later Consumer Spending increases as a result).
-   - ![Regression Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/OLS%20Model.png)
+   - ![Regression Image](Project Images/OLS Model.png)
 
 5. **Export Results**:
    - Save CPIH with lags to Excel.

@@ -1,6 +1,6 @@
 
 # Time-series Forecasting With Consuemr Spending ONS Data
-![Main_Image]([Project Images/opengraph.png](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/opengraph.png))
+![Main_Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/opengraph.png)
 
 Office For National Statistics is publicly accessed government economic data. The goal with this project is to be able to forecasting Consumer Spending across all sectors to identify where people are chosing to spend their money. This project can aid business's in deciding where they should focuse their marketing efforts and inventory allocation and adapt pricing stratgies based on sector specific spending strends.
 
@@ -12,7 +12,7 @@ By incorperating ETL-processed consumer spending data, inflation metrics and con
 [Data ETL🔎](Drook93/ONS-Govenment-Public-Spending-Forecast/ETL)
 [EDA with Seaborn/Matplotlib](Drook93/ONS-Govenment-Public-Spending-Forecast/EDA)
 [Hypothesis Tests](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/tree/main/Hypothesis%20Test)
-[Predictive Models][(Drook93/ONS-Govenment-Public-Spending-Forecast/Predictive Models)](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/tree/main/Predictive%20Models)
+[Predictive Models](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/tree/main/Predictive%20Models)
 
  
 

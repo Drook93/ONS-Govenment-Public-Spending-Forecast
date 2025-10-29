@@ -13,7 +13,7 @@ st.markdown("Visualize consumer spending forecasts by quarter and sector, with i
 @st.cache_data
 def load_data():
    
-    consumer_spend = pd.read_excel("C:\\Git_test\\Project 2 Docs\\Data Sets\\Forecasting Final.xlsx")
+    consumer_spend = pd.read_excel("Forecasting Final.xlsx")
 
      
 

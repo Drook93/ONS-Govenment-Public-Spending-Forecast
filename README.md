@@ -15,7 +15,9 @@ By incorperating ETL-processed consumer spending data, inflation metrics and con
 *[Predictive Models](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/tree/main/Predictive%20Models)
 *[Final Presentation & Findings]()
 
- * ![Dashboard Demo(In-progress)](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Dashboard.gif)
+## Demo Dashboard of findings (in-progress)🖥️
+
+![Dashboard Demo(In-progress)](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Dashboard.gif)
 
 
   ## Testing Inflation Lag Impact on Consumer Spending🧪

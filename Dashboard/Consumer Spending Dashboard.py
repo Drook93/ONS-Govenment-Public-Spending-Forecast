@@ -13,7 +13,7 @@ st.markdown("Visualize consumer spending forecasts by quarter and sector, with i
 @st.cache_data
 def load_data():
    
-    consumer_spend = pd.read_csv('data.csv')
+    consumer_spend = pd.read_csv("Dashboard/data.csv")
 
      
 
@@ -155,3 +155,4 @@ st.dataframe(consumer_spend[['Inflation_Acceleration_lag3']].head())
 st.subheader("Model Evaluation")
 
 st.image("OLS_Model.png", caption="OLS Model Results", use_column_width=True)
+

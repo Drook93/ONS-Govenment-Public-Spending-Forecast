@@ -52,15 +52,24 @@ We then test across different Inflation metrics against Consumer Spending using 
    - Coefficients: +8.75 (lag 3)
 Using the top performing lag from Granger, we test the direction; does that metric boost or drag spending. Magnitudes are revelaed in the coeffient size. Bigger postitives mean they surge together and bigger negatives mean higher prices reduces peoples spending capacity.
    - ![Regression Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/OLS%20Model.png)
+  
+5. **VAR multi-variable autoregression (IRF)**:
+   - Use loop for lags for AIC to identify best lag across features.
+   - Use granger test on VAR residuals
+   -  Use IRF (Impulse Response Function) from VAR to see shock and responses.
+Using the top performing lag from Granger, we test the direction; does that metric boost or drag spending. Magnitudes are revelaed in the coeffient size. Bigger postitives mean they surge together and bigger negatives mean higher prices reduces peoples spending capacity.
 
-5. **Export Results**:
+   - ![Var Model](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/VAR%20Results.png)
+   - ![IRF (Impulse Response Functions](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Shock%20response.png) 
+
+6. **Export Results**:
    - Save CPIH with lags to Excel.
    - ![Export Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Saved%20CPIH%20Hypothesis%20Test.png)
 
 ## Process Summary: Forecasting Consumer Spending with Lagged Inflation🔮
 
 This notebook builds forecasting models for consumer spending using lagged inflation data, employing Lasso, Ridge, and RandomForest with GridSearchCV.
-* [Model Selection and Predictive Analytics] - Machine Learning Lab](https://github.com/Drook93/IBM-Data-Science-Capstone-SpaceX/blob/main/SpaceX_Machine%20Learning%20Prediction_Part_5.ipynb)
+* [Model Selection and Predictive Analytics] - Machine Learning Lab](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Model%20Results.png)
 * 
 1. **Library Installation and Imports**:
    - Install statsmodels.

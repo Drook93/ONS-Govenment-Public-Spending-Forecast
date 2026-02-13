@@ -57,7 +57,7 @@ Using the top performing lag from Granger, we test the direction; does that metr
    - Use loop for lags for AIC to identify best lag across features.
    - Use granger test on VAR residuals
    -  Use IRF (Impulse Response Function) from VAR to see shock and responses.
-Using the top performing lag from Granger, we test the direction; does that metric boost or drag spending. Magnitudes are revelaed in the coeffient size. Bigger postitives mean they surge together and bigger negatives mean higher prices reduces peoples spending capacity.
+Using the top performing lag from Granger, we test the direction; does that metric boost or drag spending. Magnitudes are revealed in the coefficient size. Bigger postitives mean they surge together and bigger negatives mean higher prices reduces peoples spending capacity.
 
    - ![Var Model](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/VAR%20Results.png)
    - ![IRF (Impulse Response Functions](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Shock%20response.png) 

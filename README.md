@@ -103,11 +103,15 @@ Merged_df_copy_split_rows_test.reset_index(drop=True, inplace=True)"**
    - Ensure the best lag is applied to X-test and t-train with preocess StandardScaler for better computation accuracy.
    - The Model is then trained for each sector with the chosen lag amd applied to GrideSearch CV with ".fit.
    - ![Lag Loop 2 Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Applying%20Best%20Lag%20To%20Model.png)
-    
+   - Additional check carried out doing residual diagnostics to identify dift and to check the mean difference between actual vs predicted values.
+   - This additional check is carried out to check for bias, hetroscedasticy, patterns and outliers.
+   - See image text for detailed results.↓↓↓
+   - ![Residual Plot Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Plot%20checking%20residuals.png)
 
 5. **Evaluation and Results**:
    - Compute R2, MSE, RMSE.
    - Print best model, parameters, CV score.
+   - Checked residuals see mean and drift
    - Export results.
    - ![Evaluation Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Model%20Metrics.png)
 

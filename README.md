@@ -9,7 +9,7 @@ By incorperating ETL-processed consumer spending data, inflation metrics and con
 
 
 #### ↓↓↓Links to Folders↓↓↓
-*[Data ETL🔎](Drook93/ONS-Govenment-Public-Spending-Forecast/ETL)
+*[Data ETL](Drook93/ONS-Govenment-Public-Spending-Forecast/ETL)
 *[EDA with Seaborn/Matplotlib](Drook93/ONS-Govenment-Public-Spending-Forecast/EDA)
 *[Hypothesis Tests](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/tree/main/Hypothesis%20Test)
 *[Predictive Models](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/tree/main/Predictive%20Models)
@@ -50,7 +50,7 @@ We then test across different Inflation metrics against Consumer Spending using 
    - Identify the direction of causation with OLS mode
    - Run OLS on spending vs. lagged inflation.
    - Coefficients: +8.75 (lag 3)
-Using the top performing lag from Granger, we test the direction; does that metric boost or drag spending. Magnitudes are revelaed in the coeffient size. Bigger postitives mean they surge together and bigger negatives mean higher prices reduces peoples spending capacity.
+Using the top performing lag from Granger, we test the direction; does that metric boost or drag spending. Magnitudes are revealed in the coeffient size. Bigger postitives mean they surge together and bigger negatives mean higher prices reduces peoples spending capacity.
    - ![Regression Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/OLS%20Model.png)
   
 5. **VAR multi-variable autoregression (IRF)**:
@@ -104,7 +104,7 @@ Merged_df_copy_split_rows_test.reset_index(drop=True, inplace=True)"**
    - The Model is then trained for each sector with the chosen lag amd applied to GrideSearch CV with ".fit.
    - ![Lag Loop 2 Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Applying%20Best%20Lag%20To%20Model.png)
    - Additional check carried out doing residual diagnostics to identify dift and to check the mean difference between actual vs predicted values.
-   - This additional check is carried out to check for bias, hetroscedasticy, patterns and outliers.
+   - This additional check is carried out to check for bias, heteroscedasticity, patterns and outliers.
    - See image text for detailed results.↓↓↓
    - ![Residual Plot Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Plot%20checking%20residuals.png)
 
@@ -116,7 +116,4 @@ Merged_df_copy_split_rows_test.reset_index(drop=True, inplace=True)"**
    - ![Evaluation Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Model%20Metrics.png)
 
 
-
-  
-* [Final Presentation (Slide)]
 

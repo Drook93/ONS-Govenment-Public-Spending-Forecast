@@ -2,10 +2,9 @@
 # Time-series Forecasting With Consumer Spending ONS Data
 ![Main_Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/opengraph.png)
 
-Office For National Statistics is publicly accessed government economic data. The goal with this project is to be able to forecasting Consumer Spending across all sectors to identify where people are chosing to spend their money. This project can aid business's in deciding where they should focuse their marketing efforts and inventory allocation and adapt pricing stratgies based on sector specific spending strends.
+Office For National Statistics is publicly accessed government economic data. The goal with this project is to be able to forecast Consumer Spending across all sectors to identify where people are choosing to spend their money. This project can aid business's in deciding where they should focus their marketing efforts and inventory allocation and adapt pricing strategies based on sector specific spending trends.
 
-By incorperating ETL-processed consumer spending data, inflation metrics and consumer confidence indicators, the project adjusts fro economic shifts like recessions. It employs three predictive models, with time-series and a manual lag and utilising cross validation with GrideSearch CV. The metrics used to select the model and parameters with best lag are R2 Train/Test Score and Negative MSE Cross-Validation against Negative MSE Test. The plan is to introduce more features that could influence the consumer spending outcomes for a more robust forecast.
-
+By incorporating ETL-processed consumer spending data, inflation metrics and consumer confidence indicators, the project adjusts for economic shifts like recessions. It employs three predictive models, with time-series and a manual lag and utilising cross-validation with GrideSearch CV. The metrics used to select the model and parameters with best lag are R2 Train/Test Score and Negative MSE Cross-Validation against Negative MSE Test. The plan is to introduce more features that could influence the consumer spending outcomes for a more robust forecast.
 
 
 #### ↓↓↓Links to Folders↓↓↓

@@ -7,19 +7,19 @@ Office For National Statistics is publicly accessed government economic data. Th
 By incorporating ETL-processed consumer spending data, inflation metrics and consumer confidence indicators, the project adjusts for economic shifts like recessions. It employs three predictive models, with time-series and a manual lag and utilising cross-validation with GrideSearch CV. The metrics used to select the model and parameters with best lag are R2 Train/Test Score and Negative MSE Cross-Validation against Negative MSE Test. The plan is to introduce more features that could influence the consumer spending outcomes for a more robust forecast.
 
 
-#### ↓↓↓Links to Folders↓↓↓
+#### Links to Folders
 *[Data ETL](Drook93/ONS-Govenment-Public-Spending-Forecast/ETL)
 *[EDA with Seaborn/Matplotlib](Drook93/ONS-Govenment-Public-Spending-Forecast/EDA)
 *[Hypothesis Tests](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/tree/main/Hypothesis%20Test)
 *[Predictive Models](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/tree/main/Predictive%20Models)
 *[Final Presentation & Findings]()
 
-## Demo Dashboard (in-progress)🖥️
+## Demo Dashboard (in-progress)
 
 ![Dashboard Demo(In-progress)](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Dashboard.gif)
 
 
-  ## Testing Inflation Lag Impact on Consumer Spending🧪
+  ## Testing Inflation Lag Impact on Consumer Spending
 
 From these test's, we are looking to see if Inflation as any causel affect on Consumer Spending. We start by identifying if there is any correlation between them with setting manual lags. I'm looking for negative values to see any inverse relationship but there are weak coefficience relationships across all the lags.  
 
@@ -65,7 +65,7 @@ Using the top performing lag from Granger, we test the direction; does that metr
    - Save CPIH with lags to Excel.
    - ![Export Image](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Saved%20CPIH%20Hypothesis%20Test.png)
 
-## Process Summary: Forecasting Consumer Spending with Lagged Inflation🔮
+## Process Summary: Forecasting Consumer Spending with Lagged Inflation
 
 This notebook builds forecasting models for consumer spending using lagged inflation data, employing Lasso, Ridge, and RandomForest with GridSearchCV.
 * [Model Selection and Predictive Analytics] - Machine Learning Lab](https://github.com/Drook93/ONS-Govenment-Public-Spending-Forecast/blob/main/Project%20Images/Model%20Results.png)
